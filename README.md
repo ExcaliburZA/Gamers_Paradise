@@ -1,4 +1,4 @@
-# Task 1 Project
+# Gamer's Utopia
 This is an interactable gaming website where users can learn more about their favourite games and get in touch with the company providing it.
 
 ## Table of Contents
