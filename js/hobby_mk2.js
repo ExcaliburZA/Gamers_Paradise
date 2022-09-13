@@ -7,7 +7,7 @@ function OnLoad()
 {
 
         localStorage.setItem("hasLoaded", true);
-        //savedGames = [];
+        
         localStorage.setItem("saved", JSON.stringify(savedGames));
         localStorage.setItem("rustLikes", 0);
         localStorage.setItem("csgoLikes", 0);
@@ -167,9 +167,7 @@ function DisplaySaved()
 
     $("li").hover(function(){
         $("li.paragraph-hover").css('font-style', 'italic');
-    });
-
-    alert("running");
+    });    
 
 }
 
@@ -181,7 +179,7 @@ $('#btnSave').click(function(){
 
     //linking to HTML elements
     let gameName = document.getElementById("gameName");
-    //alert(gameName.innerHTML);    
+        
     let gameDesc = document.getElementById("gameDesc");
     let priceRow = document.getElementById("tblPriceData");
     let salesRow = document.getElementById("tblSalesData");
@@ -219,7 +217,7 @@ function CreateGame(name, desc, price, grossSales, genres)
 //function that splits a string into a string array using a delimeter
 function SplitString(string)
 {
-    alert("SPLITTING\n"+string);
+    
     let splitString = String(string).split('-');
 
     for(let x  = 0; x < splitString.length; x++)
